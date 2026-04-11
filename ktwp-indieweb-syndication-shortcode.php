@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: KupieTools Indieweb Syndication Shortcode
- * Description: Enables a simple shortcode [syndication to="indieweb,indienews,fediverse"] to syndicate to Indieweb chat streem, Indienews, and/or the Fediverse respectively. Requires webmentions and Bridgy Fed integration to already be separately enabled.
+ * Description: DOESN'T WORK, DO NOT USE. WebMentions plugin doesn't handle shortcodes. (Was: Enables a simple shortcode [syndication to="indieweb,indienews,fediverse"] to syndicate to Indieweb chat streem, Indienews, and/or the Fediverse respectively. Requires webmentions and Bridgy Fed integration to already be separately enabled.)
  * Version: 1.0
  * Author: Michael Kupietz
  */
