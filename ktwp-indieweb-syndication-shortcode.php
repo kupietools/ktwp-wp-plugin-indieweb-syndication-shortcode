@@ -34,15 +34,22 @@ function syndicate_shortcode( $atts ) {
     <div id="ktwp-indieweb-syndication" hidden="from-humans">
         <?php if ( in_array( 'indienews', $to_values ) ) : ?>
             <a href="https://news.indieweb.org/en" class="u-category">indienews</a>
-        <?php endif; ?>
+        <?php 
+	
+	do_action('send_webmention', get_the_permalink(), "https://news.indieweb.org/en");
+	endif; ?>
 
         <?php if ( in_array( 'fediverse', $to_values ) ) : ?>
             <a class="u-bridgy-fed" href="https://fed.brid.gy/">fediverse</a>
-        <?php endif; ?>
+			
+        <?php 
+	do_action('send_webmention', get_the_permalink(), "https://fed.brid.gy/");
+	endif; ?>
 
         <?php if ( in_array( 'indieweb', $to_values ) ) : ?>
             <a href="https://michaelkupietz.com/genre/indieweb/" class="p-category">indieweb</a>
-        <?php endif; ?>
+        <?php 
+	endif; ?>
     </div>
     <?php
 
